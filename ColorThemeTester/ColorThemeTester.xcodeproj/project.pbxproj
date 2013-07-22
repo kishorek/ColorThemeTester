@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0357602D179D282200F1916F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0357602C179D282200F1916F /* UIKit.framework */; };
+		0357602F179D282200F1916F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0357602E179D282200F1916F /* Foundation.framework */; };
+		03576031179D282200F1916F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03576030179D282200F1916F /* CoreGraphics.framework */; };
+		03576037179D282200F1916F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03576035179D282200F1916F /* InfoPlist.strings */; };
+		03576039179D282200F1916F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03576038179D282200F1916F /* main.m */; };
+		0357603D179D282200F1916F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0357603C179D282200F1916F /* AppDelegate.m */; };
+		0357603F179D282300F1916F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0357603E179D282300F1916F /* Default.png */; };
+		03576041179D282300F1916F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03576040179D282300F1916F /* Default@2x.png */; };
+		03576043179D282300F1916F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03576042179D282300F1916F /* Default-568h@2x.png */; };
+		03576046179D282300F1916F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03576045179D282300F1916F /* ViewController.m */; };
+		03576049179D282300F1916F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03576047179D282300F1916F /* ViewController.xib */; };
+		03576063179D288600F1916F /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 03576051179D288600F1916F /* AFHTTPClient.m */; };
+		03576064179D288600F1916F /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03576053179D288600F1916F /* AFHTTPRequestOperation.m */; };
+		03576065179D288600F1916F /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03576055179D288600F1916F /* AFImageRequestOperation.m */; };
+		03576066179D288600F1916F /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03576057179D288600F1916F /* AFJSONRequestOperation.m */; };
+		03576067179D288600F1916F /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03576059179D288600F1916F /* AFNetworkActivityIndicatorManager.m */; };
+		03576068179D288600F1916F /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0357605C179D288600F1916F /* AFPropertyListRequestOperation.m */; };
+		03576069179D288600F1916F /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0357605E179D288600F1916F /* AFURLConnectionOperation.m */; };
+		0357606A179D288600F1916F /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03576060179D288600F1916F /* AFXMLRequestOperation.m */; };
+		0357606B179D288600F1916F /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 03576062179D288600F1916F /* UIImageView+AFNetworking.m */; };
+		03576071179D28B700F1916F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0357606D179D28B700F1916F /* DetailViewController.m */; };
+		03576072179D28B700F1916F /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0357606E179D28B700F1916F /* DetailViewController.xib */; };
+		03576073179D28B700F1916F /* KulerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 03576070179D28B700F1916F /* KulerObject.m */; };
+		03576075179D28C600F1916F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03576074179D28C600F1916F /* MessageUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03576029179D282200F1916F /* ColorThemeTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorThemeTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0357602C179D282200F1916F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0357602E179D282200F1916F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		03576030179D282200F1916F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		03576034179D282200F1916F /* ColorThemeTester-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColorThemeTester-Info.plist"; sourceTree = "<group>"; };
+		03576036179D282200F1916F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		03576038179D282200F1916F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0357603A179D282200F1916F /* ColorThemeTester-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ColorThemeTester-Prefix.pch"; sourceTree = "<group>"; };
+		0357603B179D282200F1916F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0357603C179D282200F1916F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0357603E179D282300F1916F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		03576040179D282300F1916F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		03576042179D282300F1916F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		03576044179D282300F1916F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		03576045179D282300F1916F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		03576048179D282300F1916F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		03576050179D288600F1916F /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		03576051179D288600F1916F /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		03576052179D288600F1916F /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		03576053179D288600F1916F /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		03576054179D288600F1916F /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		03576055179D288600F1916F /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		03576056179D288600F1916F /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		03576057179D288600F1916F /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		03576058179D288600F1916F /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		03576059179D288600F1916F /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		0357605A179D288600F1916F /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		0357605B179D288600F1916F /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		0357605C179D288600F1916F /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		0357605D179D288600F1916F /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		0357605E179D288600F1916F /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		0357605F179D288600F1916F /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		03576060179D288600F1916F /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		03576061179D288600F1916F /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		03576062179D288600F1916F /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		0357606C179D28B700F1916F /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ColorThemeTester/DetailViewController.h; sourceTree = SOURCE_ROOT; };
+		0357606D179D28B700F1916F /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ColorThemeTester/DetailViewController.m; sourceTree = SOURCE_ROOT; };
+		0357606E179D28B700F1916F /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailViewController.xib; path = ColorThemeTester/DetailViewController.xib; sourceTree = SOURCE_ROOT; };
+		0357606F179D28B700F1916F /* KulerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KulerObject.h; path = ColorThemeTester/KulerObject.h; sourceTree = SOURCE_ROOT; };
+		03576070179D28B700F1916F /* KulerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KulerObject.m; path = ColorThemeTester/KulerObject.m; sourceTree = SOURCE_ROOT; };
+		03576074179D28C600F1916F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03576026179D282200F1916F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03576075179D28C600F1916F /* MessageUI.framework in Frameworks */,
+				0357602D179D282200F1916F /* UIKit.framework in Frameworks */,
+				0357602F179D282200F1916F /* Foundation.framework in Frameworks */,
+				03576031179D282200F1916F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03576020179D282200F1916F = {
+			isa = PBXGroup;
+			children = (
+				03576074179D28C600F1916F /* MessageUI.framework */,
+				03576032179D282200F1916F /* ColorThemeTester */,
+				0357602B179D282200F1916F /* Frameworks */,
+				0357602A179D282200F1916F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0357602A179D282200F1916F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03576029179D282200F1916F /* ColorThemeTester.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0357602B179D282200F1916F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0357602C179D282200F1916F /* UIKit.framework */,
+				0357602E179D282200F1916F /* Foundation.framework */,
+				03576030179D282200F1916F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		03576032179D282200F1916F /* ColorThemeTester */ = {
+			isa = PBXGroup;
+			children = (
+				0357606C179D28B700F1916F /* DetailViewController.h */,
+				0357606D179D28B700F1916F /* DetailViewController.m */,
+				0357606E179D28B700F1916F /* DetailViewController.xib */,
+				0357606F179D28B700F1916F /* KulerObject.h */,
+				03576070179D28B700F1916F /* KulerObject.m */,
+				0357604F179D288600F1916F /* AFNetworking */,
+				0357603B179D282200F1916F /* AppDelegate.h */,
+				0357603C179D282200F1916F /* AppDelegate.m */,
+				03576044179D282300F1916F /* ViewController.h */,
+				03576045179D282300F1916F /* ViewController.m */,
+				03576047179D282300F1916F /* ViewController.xib */,
+				03576033179D282200F1916F /* Supporting Files */,
+			);
+			path = ColorThemeTester;
+			sourceTree = "<group>";
+		};
+		03576033179D282200F1916F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03576034179D282200F1916F /* ColorThemeTester-Info.plist */,
+				03576035179D282200F1916F /* InfoPlist.strings */,
+				03576038179D282200F1916F /* main.m */,
+				0357603A179D282200F1916F /* ColorThemeTester-Prefix.pch */,
+				0357603E179D282300F1916F /* Default.png */,
+				03576040179D282300F1916F /* Default@2x.png */,
+				03576042179D282300F1916F /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0357604F179D288600F1916F /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				03576050179D288600F1916F /* AFHTTPClient.h */,
+				03576051179D288600F1916F /* AFHTTPClient.m */,
+				03576052179D288600F1916F /* AFHTTPRequestOperation.h */,
+				03576053179D288600F1916F /* AFHTTPRequestOperation.m */,
+				03576054179D288600F1916F /* AFImageRequestOperation.h */,
+				03576055179D288600F1916F /* AFImageRequestOperation.m */,
+				03576056179D288600F1916F /* AFJSONRequestOperation.h */,
+				03576057179D288600F1916F /* AFJSONRequestOperation.m */,
+				03576058179D288600F1916F /* AFNetworkActivityIndicatorManager.h */,
+				03576059179D288600F1916F /* AFNetworkActivityIndicatorManager.m */,
+				0357605A179D288600F1916F /* AFNetworking.h */,
+				0357605B179D288600F1916F /* AFPropertyListRequestOperation.h */,
+				0357605C179D288600F1916F /* AFPropertyListRequestOperation.m */,
+				0357605D179D288600F1916F /* AFURLConnectionOperation.h */,
+				0357605E179D288600F1916F /* AFURLConnectionOperation.m */,
+				0357605F179D288600F1916F /* AFXMLRequestOperation.h */,
+				03576060179D288600F1916F /* AFXMLRequestOperation.m */,
+				03576061179D288600F1916F /* UIImageView+AFNetworking.h */,
+				03576062179D288600F1916F /* UIImageView+AFNetworking.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03576028179D282200F1916F /* ColorThemeTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0357604C179D282300F1916F /* Build configuration list for PBXNativeTarget "ColorThemeTester" */;
+			buildPhases = (
+				03576025179D282200F1916F /* Sources */,
+				03576026179D282200F1916F /* Frameworks */,
+				03576027179D282200F1916F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColorThemeTester;
+			productName = ColorThemeTester;
+			productReference = 03576029179D282200F1916F /* ColorThemeTester.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03576021179D282200F1916F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Kishore Kumar";
+			};
+			buildConfigurationList = 03576024179D282200F1916F /* Build configuration list for PBXProject "ColorThemeTester" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 03576020179D282200F1916F;
+			productRefGroup = 0357602A179D282200F1916F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03576028179D282200F1916F /* ColorThemeTester */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03576027179D282200F1916F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03576037179D282200F1916F /* InfoPlist.strings in Resources */,
+				0357603F179D282300F1916F /* Default.png in Resources */,
+				03576041179D282300F1916F /* Default@2x.png in Resources */,
+				03576043179D282300F1916F /* Default-568h@2x.png in Resources */,
+				03576049179D282300F1916F /* ViewController.xib in Resources */,
+				03576072179D28B700F1916F /* DetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03576025179D282200F1916F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03576039179D282200F1916F /* main.m in Sources */,
+				0357603D179D282200F1916F /* AppDelegate.m in Sources */,
+				03576046179D282300F1916F /* ViewController.m in Sources */,
+				03576063179D288600F1916F /* AFHTTPClient.m in Sources */,
+				03576064179D288600F1916F /* AFHTTPRequestOperation.m in Sources */,
+				03576065179D288600F1916F /* AFImageRequestOperation.m in Sources */,
+				03576066179D288600F1916F /* AFJSONRequestOperation.m in Sources */,
+				03576067179D288600F1916F /* AFNetworkActivityIndicatorManager.m in Sources */,
+				03576068179D288600F1916F /* AFPropertyListRequestOperation.m in Sources */,
+				03576069179D288600F1916F /* AFURLConnectionOperation.m in Sources */,
+				0357606A179D288600F1916F /* AFXMLRequestOperation.m in Sources */,
+				0357606B179D288600F1916F /* UIImageView+AFNetworking.m in Sources */,
+				03576071179D28B700F1916F /* DetailViewController.m in Sources */,
+				03576073179D28B700F1916F /* KulerObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		03576035179D282200F1916F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03576036179D282200F1916F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		03576047179D282300F1916F /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03576048179D282300F1916F /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0357604A179D282300F1916F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0357604B179D282300F1916F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0357604D179D282300F1916F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColorThemeTester/ColorThemeTester-Prefix.pch";
+				INFOPLIST_FILE = "ColorThemeTester/ColorThemeTester-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0357604E179D282300F1916F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColorThemeTester/ColorThemeTester-Prefix.pch";
+				INFOPLIST_FILE = "ColorThemeTester/ColorThemeTester-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03576024179D282200F1916F /* Build configuration list for PBXProject "ColorThemeTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0357604A179D282300F1916F /* Debug */,
+				0357604B179D282300F1916F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0357604C179D282300F1916F /* Build configuration list for PBXNativeTarget "ColorThemeTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0357604D179D282300F1916F /* Debug */,
+				0357604E179D282300F1916F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03576021179D282200F1916F /* Project object */;
+}
