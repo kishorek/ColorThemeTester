@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
 
-@class KulerObject;
+@class ColourThemeObject;
 
 @interface DetailViewController : UIViewController<MFMailComposeViewControllerDelegate>
 
@@ -17,6 +17,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *button;
 @property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 
-@property(strong, nonatomic) KulerObject *kuler;
+@property(strong, nonatomic) ColourThemeObject *colorObject;
 
 @end

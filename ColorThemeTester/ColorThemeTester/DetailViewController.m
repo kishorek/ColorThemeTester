@@ -7,7 +7,7 @@
 //
 
 #import "DetailViewController.h"
-#import "KulerObject.h"
+#import "ColourThemeObject.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface DetailViewController ()
@@ -30,14 +30,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    [self.navigationController.navigationBar setTintColor:self.kuler.color1];
-    [self.view setBackgroundColor:self.kuler.color2];
-    [self.toolbar setTintColor:self.kuler.color5];
-    [[[self.toolbar items] objectAtIndex:0] setTintColor:self.kuler.color2];
-    [self.label setTextColor:self.kuler.color3];
-    [self.button setBackgroundColor:self.kuler.color4];
+    [self.navigationController.navigationBar setTintColor:self.colorObject.color1];
+    [self.view setBackgroundColor:self.colorObject.color2];
+    [self.toolbar setTintColor:self.colorObject.color5];
+    [[[self.toolbar items] objectAtIndex:0] setTintColor:self.colorObject.color2];
+    [self.label setTextColor:self.colorObject.color3];
+    [self.button setBackgroundColor:self.colorObject.color4];
     
-    self.label.text = self.kuler.title;
+    self.label.text = self.colorObject.title;
     self.button.layer.cornerRadius = 6;    
     [self.button addTarget:self action:@selector(emailImage) forControlEvents:UIControlEventTouchUpInside];
 }
@@ -66,10 +66,17 @@
 {
     MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
     picker.mailComposeDelegate = self;
+    NSString *emailBody = nil;
     
-    [picker setSubject:@"Kuler Color pattern!"];
-    NSString *emailBody = @"Check this out!<br/><br/>";
-    emailBody = [NSString stringWithFormat:@"%@ Color 1=%@<br/>Color 2=%@<br/>Color 3=%@<br/>Color 4=%@<br/>Color 5=%@<br/>",emailBody,self.kuler.color1,self.kuler.color2,self.kuler.color3,self.kuler.color4,self.kuler.color1];
+    if (self.colorObject.url==nil) {
+        [picker setSubject:@"Kuler Color pattern!"];
+        emailBody = @"Check this out!<br/><br/>";
+    } else {
+        [picker setSubject:@"COLOURlovers Color pattern!"];
+        emailBody = [NSString stringWithFormat:@"Check this out!<br/><br/><a href=\"%@\">%@</a><br/><br/>",self.colorObject.url,self.colorObject.url];
+    }
+    
+    emailBody = [NSString stringWithFormat:@"%@ Color 1=%@<br/>Color 2=%@<br/>Color 3=%@<br/>Color 4=%@<br/>Color 5=%@<br/>",emailBody,self.colorObject.color1,self.colorObject.color2,self.colorObject.color3,self.colorObject.color4,self.colorObject.color1];
     [picker setMessageBody:emailBody isHTML:YES];
     NSData *data = UIImagePNGRepresentation([self screenshotIt]);
     [picker addAttachmentData:data mimeType:@"image/png" fileName:@"KulerImage"];

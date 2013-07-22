@@ -29,8 +29,9 @@
 		0357606B179D288600F1916F /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 03576062179D288600F1916F /* UIImageView+AFNetworking.m */; };
 		03576071179D28B700F1916F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0357606D179D28B700F1916F /* DetailViewController.m */; };
 		03576072179D28B700F1916F /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0357606E179D28B700F1916F /* DetailViewController.xib */; };
-		03576073179D28B700F1916F /* KulerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 03576070179D28B700F1916F /* KulerObject.m */; };
 		03576075179D28C600F1916F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03576074179D28C600F1916F /* MessageUI.framework */; };
+		0357607A179D313800F1916F /* ColourThemeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 03576079179D313800F1916F /* ColourThemeObject.m */; };
+		0357607E179D316500F1916F /* APIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0357607D179D316500F1916F /* APIHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,9 +73,11 @@
 		0357606C179D28B700F1916F /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ColorThemeTester/DetailViewController.h; sourceTree = SOURCE_ROOT; };
 		0357606D179D28B700F1916F /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ColorThemeTester/DetailViewController.m; sourceTree = SOURCE_ROOT; };
 		0357606E179D28B700F1916F /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailViewController.xib; path = ColorThemeTester/DetailViewController.xib; sourceTree = SOURCE_ROOT; };
-		0357606F179D28B700F1916F /* KulerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KulerObject.h; path = ColorThemeTester/KulerObject.h; sourceTree = SOURCE_ROOT; };
-		03576070179D28B700F1916F /* KulerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KulerObject.m; path = ColorThemeTester/KulerObject.m; sourceTree = SOURCE_ROOT; };
 		03576074179D28C600F1916F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		03576078179D313800F1916F /* ColourThemeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColourThemeObject.h; sourceTree = "<group>"; };
+		03576079179D313800F1916F /* ColourThemeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColourThemeObject.m; sourceTree = "<group>"; };
+		0357607C179D316500F1916F /* APIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIHelper.h; sourceTree = "<group>"; };
+		0357607D179D316500F1916F /* APIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,11 +126,11 @@
 		03576032179D282200F1916F /* ColorThemeTester */ = {
 			isa = PBXGroup;
 			children = (
+				0357607B179D314A00F1916F /* helpers */,
+				03576077179D313700F1916F /* models */,
 				0357606C179D28B700F1916F /* DetailViewController.h */,
 				0357606D179D28B700F1916F /* DetailViewController.m */,
 				0357606E179D28B700F1916F /* DetailViewController.xib */,
-				0357606F179D28B700F1916F /* KulerObject.h */,
-				03576070179D28B700F1916F /* KulerObject.m */,
 				0357604F179D288600F1916F /* AFNetworking */,
 				0357603B179D282200F1916F /* AppDelegate.h */,
 				0357603C179D282200F1916F /* AppDelegate.m */,
@@ -177,6 +180,24 @@
 				03576062179D288600F1916F /* UIImageView+AFNetworking.m */,
 			);
 			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		03576077179D313700F1916F /* models */ = {
+			isa = PBXGroup;
+			children = (
+				03576078179D313800F1916F /* ColourThemeObject.h */,
+				03576079179D313800F1916F /* ColourThemeObject.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		0357607B179D314A00F1916F /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0357607C179D316500F1916F /* APIHelper.h */,
+				0357607D179D316500F1916F /* APIHelper.m */,
+			);
+			path = helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +280,8 @@
 				0357606A179D288600F1916F /* AFXMLRequestOperation.m in Sources */,
 				0357606B179D288600F1916F /* UIImageView+AFNetworking.m in Sources */,
 				03576071179D28B700F1916F /* DetailViewController.m in Sources */,
-				03576073179D28B700F1916F /* KulerObject.m in Sources */,
+				0357607A179D313800F1916F /* ColourThemeObject.m in Sources */,
+				0357607E179D316500F1916F /* APIHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +404,7 @@
 				0357604E179D282300F1916F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

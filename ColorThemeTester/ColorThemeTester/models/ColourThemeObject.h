@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface KulerObject : NSObject
+@interface ColourThemeObject : NSObject
 
 @property (nonatomic, strong) NSString *title;
 
@@ -18,5 +18,6 @@
 @property(nonatomic, strong) UIColor *color4;
 @property(nonatomic, strong) UIColor *color5;
 
+@property(nonatomic, strong) NSString *url;
 
 @end

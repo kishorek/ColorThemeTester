@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 @KishoreK. All rights reserved.
 //
 
-#import "KulerObject.h"
+#import "ColourThemeObject.h"
 
-@implementation KulerObject
+@implementation ColourThemeObject
 
 @end
