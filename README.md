@@ -1,9 +1,8 @@
 ColorThemeTester
 ================
 
-Play around with the app's colour theme from Kuler/COLOURlovers palettes.
+Play around with the app's colour theme from COLOURlovers palettes.
 
-Note: Kuler API is no longer available for public. So by default this demo uses COLOURlovers and you can switch to Kuler if you have the API access!
 
 Screenshots
 ===========
